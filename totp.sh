@@ -3,6 +3,9 @@
 # totp.sh - Shell script implementation of TOTP (RFC 6238)
 #
 # Copyright © 2020 Rich Felker
+# Licensed under standard MIT license
+#
+# SPDX-License-Identifier: MIT
 #
 # Depends on a base32 utility, date command supporting %s format,
 # and openssl command line utility. Otherwise portable sh.

@@ -16,7 +16,7 @@
 #
 
 t=$(($(date +%s)/30))
-k="$(tr 0189a-z OLBGA-Z | base32 -d | od -v -An -tx1 | tr -d ' ')"
+k="$(tr 0189a-z OLBGA-Z | base32 -d | od -v -An -tx1 | tr -d ' \n')"
 
 h=$(
 printf '%b' $(printf '\x%.2x' $(

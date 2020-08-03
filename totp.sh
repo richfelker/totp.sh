@@ -19,7 +19,7 @@ t=$(($(date +%s)/30))
 k="$(tr 0189a-z OLBGA-Z | base32 -d | od -v -An -tx1 | tr -d ' \n')"
 
 h=$(
-printf '%b' $(printf '\x%.2x' $(
+printf '%b' $(printf '\\x%.2x' $(
 i=0; while test $i -lt 8 ; do
 echo $(((t>>(56-8*i))&0xff))
 i=$((i+1))
